@@ -1,0 +1,92 @@
+{
+    "products":[
+         {
+            "id":1 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":2 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":3,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":4,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":5 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":6 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":7 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":8 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":9 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":10 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         },
+         {
+            "id":11 ,
+            "title": "",
+            "description": "",
+            "availableSizes": [],
+            "price": 10.9,
+            "isFreeShipping": true
+         }
+    ]
+}
