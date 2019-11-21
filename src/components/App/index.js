@@ -1,10 +1,13 @@
 import React from 'react';
+import Shelf from '../Shelf';
 
 function App() {
   return (
-    <div className="App">
-       <h1>Hello world</h1>
-    </div>
+    <React.Fragment>
+      <main>
+        <Shelf />
+      </main>
+    </React.Fragment>
   );
 }
 
