@@ -5,7 +5,7 @@
             "sku": 12064273040195392,
             "title": "Remera-1",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["S", "XS"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -14,7 +14,7 @@
             "sku": 51498472915966366,
             "title":"Remera-2",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["M"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -23,7 +23,7 @@
             "sku": 10686354557628303,
             "title":"Remera-3",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["X", "L", "XL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -32,7 +32,7 @@
             "sku": 11033926921508487,
             "title":"Remera-4",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["X", "L", "XL", "XXL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -41,7 +41,7 @@
             "sku": 39876704341265606,
             "title":"Remera-5",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["X", "L"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -50,7 +50,7 @@
             "sku": 10412368723880253,
             "title":"Remera-6",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["XS", "X", "L", "ML", "XL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -59,7 +59,7 @@
             "sku": 8552515751438644,
             "title": "Remera-7",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["X", "L", "XL", "XXL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -68,7 +68,7 @@
             "sku": 18644119330491312,
             "title": "Remera-8",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["X", "L", "XL", "XXL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -77,7 +77,7 @@
             "sku": 11854078013954528,
             "title": "Remera-9",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["X", "L"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -86,7 +86,7 @@
             "sku": 876661122392077,
             "title": "Remera-10",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["X", "L"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -95,7 +95,7 @@
             "sku": 9197907543445677,
             "title": "Remera-11",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["XL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -104,7 +104,7 @@
             "sku": 10547961582846888,
             "title": "Remera-12",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["X", "L", "XL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -113,7 +113,7 @@
             "sku": 6090484789343891,
             "title": "Remera-13",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["XL", "XXL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -122,7 +122,7 @@
             "sku": 18532669286405342,
             "title": "Remera-14",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["S"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -131,7 +131,7 @@
             "sku": 5619496040738316,
             "title": "Remera-15",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["XL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -140,7 +140,7 @@
             "sku": 11600983276356165,
             "title": "Remera-16",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["L", "XL"],
             "price": 10.9,
             "isFreeShipping": true
          },
@@ -149,7 +149,7 @@
             "sku": 27250082398145995,
             "title": "Remera-17",
             "description": "remera descrition",
-            "availableSizes": [],
+            "availableSizes": ["L", "XL"],
             "price": 10.9,
             "isFreeShipping": true
          }
