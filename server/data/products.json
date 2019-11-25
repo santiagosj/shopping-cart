@@ -7,6 +7,9 @@
             "description": "remera descrition",
             "availableSizes": ["S", "XS"],
             "price": 10.9,
+            "installments": 9,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -15,8 +18,11 @@
             "title":"Remera-2",
             "description": "remera descrition",
             "availableSizes": ["M"],
-            "price": 10.9,
-            "isFreeShipping": true
+            "price": 29.45,
+            "installments": 5,
+            "currencyId": "USD",
+            "currencyFormat": "$",
+            "isFreeShipping": false
          },
          {
             "id": 14,
@@ -24,7 +30,10 @@
             "title":"Remera-3",
             "description": "remera descrition",
             "availableSizes": ["X", "L", "XL"],
-            "price": 10.9,
+            "price": 9.0,
+            "installments": 3,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -33,7 +42,10 @@
             "title":"Remera-4",
             "description": "remera descrition",
             "availableSizes": ["X", "L", "XL", "XXL"],
-            "price": 10.9,
+            "price": 14.9,
+            "installments": 5,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -42,8 +54,11 @@
             "title":"Remera-5",
             "description": "remera descrition",
             "availableSizes": ["X", "L"],
-            "price": 10.9,
-            "isFreeShipping": true
+            "price": 13.5,
+            "installments": 3,
+            "currencyId": "USD",
+            "currencyFormat": "$",
+            "isFreeShipping": false
          },
          {
             "id": 16,
@@ -51,7 +66,10 @@
             "title":"Remera-6",
             "description": "remera descrition",
             "availableSizes": ["XS", "X", "L", "ML", "XL"],
-            "price": 10.9,
+            "price": 75.9,
+            "installments": 5,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -61,6 +79,9 @@
             "description": "remera descrition",
             "availableSizes": ["X", "L", "XL", "XXL"],
             "price": 10.9,
+            "installments": 9,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -70,6 +91,9 @@
             "description": "remera descrition",
             "availableSizes": ["X", "L", "XL", "XXL"],
             "price": 10.9,
+            "installments": 9,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -78,7 +102,10 @@
             "title": "Remera-9",
             "description": "remera descrition",
             "availableSizes": ["X", "L"],
-            "price": 10.9,
+            "price": 14.9,
+            "installments": 7,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -88,7 +115,10 @@
             "description": "remera descrition",
             "availableSizes": ["X", "L"],
             "price": 10.9,
-            "isFreeShipping": true
+            "installments": 9,
+            "currencyId": "USD",
+            "currencyFormat": "$",
+            "isFreeShipping": false
          },
          {
             "id": 4,
@@ -96,7 +126,10 @@
             "title": "Remera-11",
             "description": "remera descrition",
             "availableSizes": ["XL"],
-            "price": 10.9,
+            "price": 25.9,
+            "installments": 12,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -105,8 +138,11 @@
             "title": "Remera-12",
             "description": "remera descrition",
             "availableSizes": ["X", "L", "XL"],
-            "price": 10.9,
-            "isFreeShipping": true
+            "price": 45.9,
+            "installments": 0,
+            "currencyId": "USD",
+            "currencyFormat": "$",
+            "isFreeShipping": false
          },
          {
             "id": 6,
@@ -114,8 +150,11 @@
             "title": "Remera-13",
             "description": "remera descrition",
             "availableSizes": ["XL", "XXL"],
-            "price": 10.9,
-            "isFreeShipping": true
+            "price": 15.9,
+            "installments": 9,
+            "currencyId": "USD",
+            "currencyFormat": "$",
+            "isFreeShipping": false
          },
          {
             "id": 7,
@@ -123,7 +162,10 @@
             "title": "Remera-14",
             "description": "remera descrition",
             "availableSizes": ["S"],
-            "price": 10.9,
+            "price": 30.0,
+            "installments": 3,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -132,7 +174,10 @@
             "title": "Remera-15",
             "description": "remera descrition",
             "availableSizes": ["XL"],
-            "price": 10.9,
+            "price": 15.9,
+            "installments": 9,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -141,7 +186,10 @@
             "title": "Remera-16",
             "description": "remera descrition",
             "availableSizes": ["L", "XL"],
-            "price": 10.9,
+            "price": 25.9,
+            "installments": 7,
+            "currencyId": "USD",
+            "currencyFormat": "$",
             "isFreeShipping": true
          },
          {
@@ -149,9 +197,12 @@
             "sku": 27250082398145995,
             "title": "Remera-17",
             "description": "remera descrition",
-            "availableSizes": ["L", "XL"],
+            "availableSizes": ["L", "XL"],    
             "price": 10.9,
-            "isFreeShipping": true
+            "installments": 9,
+            "currencyId": "USD",
+            "currencyFormat": "$",
+            "isFreeShipping": false
          }
     ]
 }

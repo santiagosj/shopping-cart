@@ -19,11 +19,13 @@ const compare = {
 export const fetchProducts = (filters, sortBy, callback) => dispatch => {
     return axios
        .get(productsAPI)
-       .then(res =>{
-           let {products} = res.data;
+       .then(res => {
+           let { products } = res.data;
 
            if(!!filters && filters.length > 0){
-               products = products.filter(p => filters.find(f => p.avaiableSizes.find(size => size === f)))
+                products = products.filter(p => 
+                filters.find(f => p.avaiableSizes.find(size => size === f))
+             );
            }
 
            if(!!sortBy){

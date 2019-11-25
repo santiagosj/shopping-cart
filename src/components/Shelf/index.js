@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 import { fetchProducts } from '../../services/shelf/actions';
 
+import ShelfHeader from './ShelfHeader'
 import Spinner from '../Spinner';
 import ProductList from './ProductList';
 
@@ -26,8 +27,8 @@ class Shelf extends Component {
     }
     
     componentWillReceiveProps(nextProps){
-        const {filters:nextFilters, sort:nextSort} = nextProps;
-        const {filters} = this.props;
+        const {filters: nextFilters, sort: nextSort} = nextProps;
+        const { filters } = this.props;
         if(nextFilters.length !== filters.length){
             this.handleFetchProducts(nextFilters, undefined)
         }
@@ -41,8 +42,8 @@ class Shelf extends Component {
         filters = this.props.filters, 
         sort = this.props.sort
     ) => {
-        this.setState({isLoading:true});
-        this.props.fetchProducts(filters,sort,()=>{
+        this.setState({isLoading: true});
+        this.props.fetchProducts(filters, sort, () => {
             this.setState({
                 isLoading:false
             })
@@ -50,12 +51,13 @@ class Shelf extends Component {
     }
 
     render(){
-         const {products } = this.props;
-         const {isLoading} = this.state;
+         const { products } = this.props;
+         const { isLoading } = this.state;
         return(
           <React.Fragment>
               {isLoading && <Spinner/>}
               <div className="shelf-container">
+                 <ShelfHeader productsLength={products.length}/>
                  <ProductList products={products}/>
               </div>
           </React.Fragment>
