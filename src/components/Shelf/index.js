@@ -58,7 +58,7 @@ class Shelf extends Component {
               {isLoading && <Spinner/>}
               <div className="shelf-container">
                  <ShelfHeader productsLength={products.length}/>
-                 <ProductList products={products}/>
+                 <ProductList products={products} />
               </div>
           </React.Fragment>
         )
@@ -67,8 +67,8 @@ class Shelf extends Component {
 
 const mapStateToProps = state => ({
     products: state.shelf.products,
-    filters:state.filters.items,
-    sort:state.sort.type
+    filters: state.filters.items,
+    sort: state.sort.type
 });
 
 export default connect(

@@ -14,8 +14,8 @@ class CartProduct extends Component{
     constructor(props){
         super(props)
         this.state = {
-            product:this.props.product,
-            isMouseOver:false
+            product: this.props.product,
+            isMouseOver: false
         }
     }
 
@@ -29,11 +29,12 @@ class CartProduct extends Component{
         this.setState({
             isMouseOver:false
         })
+
     }
 
     handleOnIncrease = () => {
         const { changeProductQuantity } = this.props
-        const {product } = this.state
+        const { product } = this.state
         product.quantity = product.quantity + 1;
         changeProductQuantity(product)
     }
@@ -52,7 +53,7 @@ class CartProduct extends Component{
         const classes = ['shelf-item']
 
         if(!!this.state.isMouseOver){
-            classes.push('shelf-item-mouseover')
+            classes.push('shelf-item--mouseover')
         }
         return(
             <div className={classes.join(' ')}>
@@ -75,8 +76,9 @@ class CartProduct extends Component{
                         {product.title}
                     </p>
                     <p className="desc">
-                        {`${product.availableSizes[0]} | ${product.style}`} <br/>
-                        Cantidad: {product.quantity}
+                        {`${product.availableSizes[0]} | | ${product.description}`} <br/>
+                        Unidades: {product.quantity} <br/>
+                        Talles disponibles: {`${product.availableSizes}`}
                     </p>
                 </div>
                 

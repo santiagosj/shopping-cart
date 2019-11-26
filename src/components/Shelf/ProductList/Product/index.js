@@ -13,7 +13,7 @@ const Product = ({product, addProduct}) => {
 
     let productInstallment;
 
-     if(!!product.installment){
+     if(!!product.installments){
         const installmentPrice = product.price / product.installments;
 
         productInstallment = (
@@ -63,4 +63,6 @@ Product.propTypes = {
     addProduct:PropTypes.func.isRequired
 }
 
-export default connect(null,{addProduct})(Product)
+export default connect(
+   null,{ addProduct } 
+   )(Product) 

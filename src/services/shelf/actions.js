@@ -24,7 +24,7 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
 
            if(!!filters && filters.length > 0){
                 products = products.filter(p => 
-                filters.find(f => p.avaiableSizes.find(size => size === f))
+                filters.find(f => p.availableSizes.find(size => size === f))
              );
            }
 
@@ -43,7 +43,7 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
            
 
        })
-        .catch(err => {
+        .catch( err => {
             console.log('No fue posible hacer el fetch de los productos')
         })
 }
