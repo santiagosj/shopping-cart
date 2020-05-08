@@ -48,7 +48,7 @@ class CartProduct extends Component{
 
     render(){
         const { removeProduct } = this.props;
-        const {product} = this.state;
+        const { product } = this.state;
 
         const classes = ['shelf-item']
 

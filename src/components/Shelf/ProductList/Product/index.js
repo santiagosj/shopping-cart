@@ -6,7 +6,7 @@ import Thumb from '../../../Thumb';
 import { formatPrice } from '../../../../services/util';
 import { addProduct } from '../../../../services/cart/actions';
 
-const Product = ({product, addProduct}) => {
+const Product = ({product, addProduct }) => {
     product.quantity = 1;
 
     let formattedPrice = formatPrice(product.price, product.currencyId);
@@ -30,7 +30,6 @@ const Product = ({product, addProduct}) => {
     return(
         <div 
            className="shelf-item"
-           onClick={() => addProduct(product)}
            data-sku={product.sku}
         >
              {product.isFreeShipping && (<span className="shelf-stopper">Envío gratis</span>)}
@@ -51,7 +50,7 @@ const Product = ({product, addProduct}) => {
                      {productInstallment}
                 </div>
 
-            <div className="shelf-item__buy-btn">Agregar al carrito</div>
+            <div className="shelf-item__buy-btn" onClick={() => addProduct(product)}>Agregar al carrito</div>
 
         </div>
     )

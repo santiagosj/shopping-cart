@@ -44,6 +44,13 @@ class Filter extends Component{
               <div className="filters">
                   <h4 className="title">Talles:</h4>
                   {this.createCheckboxes()}
+                  <h4 className="title">Categorías:</h4>
+                  <select>
+                    <option>Música</option>
+                    <option>Mujer</option>
+                    <option>Tecnología</option>
+                    <option>Deportes</option>
+                  </select>
               </div>
           )
       }
