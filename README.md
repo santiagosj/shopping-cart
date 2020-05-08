@@ -6,4 +6,8 @@
    - Product Detail.
    - Deploy - dotenv
    - Responsive Design.
-* Cambiar -> Productos / Agregar -> Categorías.
+   - Categorías
+* Cambiar: 
+   - Productos.
+   - Class components x Func components (Hooks).
+   - Database.
