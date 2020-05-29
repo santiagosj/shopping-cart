@@ -111,7 +111,10 @@ class FloatCart extends Component {
     }
 
     render(){
+
       const { cartTotal, cartProducts, removeProduct, changeProductQuantity } = this.props;
+        
+        //Productos en el Cart
 
       const products = cartProducts.map(p => {
         return (

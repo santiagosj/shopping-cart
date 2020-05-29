@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-
+import {Link} from 'react-router-dom'
 import Thumb from '../../../Thumb';
 import { formatPrice } from '../../../../services/util';
 import { addProduct } from '../../../../services/cart/actions';
@@ -33,12 +33,16 @@ const Product = ({product, addProduct }) => {
            data-sku={product.sku}
         >
              {product.isFreeShipping && (<span className="shelf-stopper">Envío gratis</span>)}
+
              <Thumb
                classes="shelf-item__thumb"
                src={require(`../../../../static/products/${product.sku}_1.jpg`)}
                alt={product.title}
              />
-             <p className="shelf-item__title">{product.title}</p>
+             <Link to={`products/${product.id}`}>
+                 <p className="shelf-item__title">Ver: {product.title}</p>
+             </Link>
+             
 
                 <div className="shelf-item__price">
 
@@ -47,7 +51,9 @@ const Product = ({product, addProduct }) => {
                       <b>{formattedPrice.substr(0, formattedPrice.length - 3)}</b>
                       <span>{formattedPrice.substr(formattedPrice.length - 3, 3)}</span>
                     </div>
+                    
                      {productInstallment}
+
                 </div>
 
             <div className="shelf-item__buy-btn" onClick={() => addProduct(product)}>Agregar al carrito</div>

@@ -1,18 +1,25 @@
-import React from 'react';
-import Shelf from '../Shelf';
-import Filter from '../Shelf/Filter';
+import React,{Fragment} from 'react';
 import FloatCart from '../FloatCart';
+import {HashRouter} from 'react-router-dom'
+import MainRouter from '../MainContent/MainRouter'
 
-function App() {
+const App = () => {
   return (
-    <React.Fragment>
-      <main>
-        <Filter />
-        <Shelf />
-      </main>
-      <FloatCart />
-    </React.Fragment>
+    <HashRouter>
+        <Fragment>
+              <MainRouter/>
+              <FloatCart />
+        </Fragment>
+    </HashRouter>
+    
   );
 }
 
 export default App;
+
+
+/**
+ * 
+ * APP HOLDER
+ * 
+ */

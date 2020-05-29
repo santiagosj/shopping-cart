@@ -65,11 +65,14 @@ class Shelf extends Component {
     }
 }
 
-const mapStateToProps = state => ({
-    products: state.shelf.products,
-    filters: state.filters.items,
-    sort: state.sort.type
-});
+const mapStateToProps = (state) => {
+    console.log(state)
+    return{
+        products: state.shelf.products,
+        filters: state.filters.items,
+        sort: state.sort.type
+    }
+};
 
 export default connect(
     mapStateToProps,

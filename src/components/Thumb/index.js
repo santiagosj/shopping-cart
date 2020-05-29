@@ -1,9 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-const Thumb = props => (
-  <div className={props.classes}>
-      <img src={props.src} alt={props.alt} title={props.title} />
+const Thumb = ({
+    classes,
+    src,
+    alt,
+    title
+  }) => (
+  <div className={classes}>
+      <img src={src} alt={alt} title={title} />
   </div>
 );
 
