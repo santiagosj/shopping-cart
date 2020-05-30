@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import Thumb from '../../../Thumb';
 import { formatPrice } from '../../../../services/util';
 import { addProduct } from '../../../../services/cart/actions';
+import '../../style.scss'
 
 const Product = ({product, addProduct }) => {
     product.quantity = 1;
@@ -34,27 +35,28 @@ const Product = ({product, addProduct }) => {
         >
              {product.isFreeShipping && (<span className="shelf-stopper">Envío gratis</span>)}
 
-             <Thumb
-               classes="shelf-item__thumb"
-               src={require(`../../../../static/products/${product.sku}_1.jpg`)}
-               alt={product.title}
-             />
-             <Link to={`products/${product.id}`}>
-                 <p className="shelf-item__title">Ver: {product.title}</p>
-             </Link>
-             
+             <Link to={`products/${product.id}`} className={'link'}>
 
-                <div className="shelf-item__price">
+                <Thumb
+                  classes="shelf-item__thumb"
+                  src={require(`../../../../static/products/${product.sku}_1.jpg`)}
+                  alt={product.title}
+                />
+                
+                    <p className="shelf-item__title">{product.title}</p>
+                
+                    <div className="shelf-item__price">
 
-                    <div className="val">
-                      <small>{product.currencyFormat}</small>
-                      <b>{formattedPrice.substr(0, formattedPrice.length - 3)}</b>
-                      <span>{formattedPrice.substr(formattedPrice.length - 3, 3)}</span>
+                        <div className="val">
+                            <small>{product.currencyFormat}</small>
+                            <b>{formattedPrice.substr(0, formattedPrice.length - 3)}</b>
+                            <span>{formattedPrice.substr(formattedPrice.length - 3, 3)}</span>
+                        </div>
+                        
+                        {productInstallment}
+
                     </div>
-                    
-                     {productInstallment}
-
-                </div>
+                </Link>
 
             <div className="shelf-item__buy-btn" onClick={() => addProduct(product)}>Agregar al carrito</div>
 

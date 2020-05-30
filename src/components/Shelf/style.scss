@@ -44,6 +44,31 @@
       border: 1px solid transparent;
       cursor: pointer;
       transition: .3s ease-in-out;
+
+      .link{
+        color: rgb(36, 36, 36);
+        text-decoration: none;
+        &::after{
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 10px;
+          left: 11px;
+          content: 'Ver producto';
+          opacity: 0;
+          width: 229px;
+          height: 348px;
+          background: rgba(0, 0, 0, 0.472);
+          color: white;
+          transition:.3s ease-in-out;
+          
+        }
+          &:hover::after{
+            transition:.3s ease-in-out;
+            opacity: 1;
+          }
+      }
      
       &:hover {
         border: 1px solid rgb(139, 139, 139);

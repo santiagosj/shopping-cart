@@ -1,22 +1,43 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import Thumb from '../../../Thumb/index'
+import { addProduct } from '../../../../services/cart/actions';
+import './ProductDetail.scss'
 
 const ProductDetail = (props) => {
-    const {product} = props
+    const {product, addProduct } = props
     window.localStorage.setItem('product',JSON.stringify(product));
     return (
-        <div>
+        <div className='product-detail-container'>
             <h1>{product && product.title}</h1>
-             -------------------------------
-            <div>
-            { product && (
-                <ul>
-                    <li>Preceio: {product.price}</li>
-                    <li>Descriopción: {product.description}</li>
-                    <li>Disponibles: {product.availableSizes}</li>
-                </ul>
-            )}
-            </div>
+            
+            <section className="detail-section">
+                <div className='box-1'>
+                    { product && <Thumb
+                        classes="shelf-item__thumb"
+                        src={require(`../../../../static/products/${product.sku}_1.jpg`)}
+                        alt={product.title}
+                />}
+
+                </div>
+                <div className='box-2'>
+                { product && (
+                    <ul>
+                        -----------------------------------------------
+                        <li>Descriopción: {product.description}</li>
+                        -----------------------------------------------
+                        <li>Disponibles: {product.availableSizes.join(', ')}</li>
+                        -----------------------------------------------
+                        <li>Preceio: $ {product.price}</li>
+                        -----------------------------------------------
+                        <div className="shelf-item__buy-btn" onClick={() => addProduct(product)}>Agregar al carrito</div>
+                    </ul>
+                    
+                )}
+                </div>
+
+            </section>
+            
         </div>
     )
 }
@@ -26,8 +47,6 @@ const mapStateToProps = (state, ownProps) => {
     const id = ownProps.match.params.id;
     const products = state.shelf.products
     const product = products ? products[id - 1] : null
-    
-    console.log(product)
   
     return {
        product: product
@@ -35,4 +54,4 @@ const mapStateToProps = (state, ownProps) => {
 
 }
 
-export default connect(mapStateToProps)(ProductDetail)
+export default connect(mapStateToProps,{ addProduct } )(ProductDetail)
