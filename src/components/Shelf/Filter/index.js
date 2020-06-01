@@ -10,14 +10,15 @@ import './style.scss';
 const availableSizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
 
 class Filter extends Component{
+
     static propTypes = {
         updateFilters: PropTypes.func.isRequired,
         filters: PropTypes.array
-      };
+    };
 
-      componentDidMount() {
-        this.selectedCheckboxes = new Set();
-      }
+        componentDidMount() {
+          this.selectedCheckboxes = new Set();
+        }
 
       toggleCheckbox = label => {
           if(this.selectedCheckboxes.has(label)){
@@ -26,8 +27,10 @@ class Filter extends Component{
               this.selectedCheckboxes.add(label)
           }
           this.props.updateFilters(Array.from(this.selectedCheckboxes))
+           console.log(this.selectedCheckboxes)
       }
 
+    
       createCheckbox = label => (
           <Checkbox
              classes="filters-available-size"
@@ -35,22 +38,29 @@ class Filter extends Component{
              handleCheckboxChange = {this.toggleCheckbox}
              key={label}
           />
+          
       )
 
       createCheckboxes = () => availableSizes.map(this.createCheckbox)
 
       render(){
+
           return(
               <div className="filters">
-                  <h4 className="title">Talles:</h4>
-                  {this.createCheckboxes()}
-                  <h4 className="title">Categorías:</h4>
+                  <h4 className="title">Sizes:</h4>
+                  
+                  { this.createCheckboxes()}
+
+                  <h4>Categorias</h4> 
+                  ------------------- <br/>
                   <select>
-                    <option>Remeras</option>
-                    <option>Música</option>
-                    <option>Tecnología</option>
+                      <option>Select</option>
+                      <option>Tech</option>
+                      <option>Music</option>
+                      <option>Beer</option>
                   </select>
               </div>
+              
           )
       }
 }

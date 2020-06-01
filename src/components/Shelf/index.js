@@ -66,7 +66,7 @@ class Shelf extends Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state)
+   // console.log(state)
     return{
         products: state.shelf.products,
         filters: state.filters.items,

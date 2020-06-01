@@ -35,7 +35,7 @@ const Product = ({product, addProduct }) => {
         >
              {product.isFreeShipping && (<span className="shelf-stopper">Envío gratis</span>)}
 
-             <Link to={`products/${product.id}`} className={'link'}>
+             <Link to={`products/${product.sku}`} className={'link'}>
 
                 <Thumb
                   classes="shelf-item__thumb"

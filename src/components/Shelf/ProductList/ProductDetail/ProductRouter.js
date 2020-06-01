@@ -12,7 +12,7 @@ import ProductDetail from '../ProductDetail/ProductDetail'
 const ProductRouter = () => (
   <Switch>
     <Route exact path='/products' component={Main}/>
-    <Route path='/products/:id' component={ProductDetail}/>
+    <Route path='/products/:sku' component={ProductDetail}/>
   </Switch>
 )
 

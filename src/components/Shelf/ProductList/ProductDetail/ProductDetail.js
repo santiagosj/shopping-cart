@@ -6,7 +6,7 @@ import './ProductDetail.scss'
 
 const ProductDetail = (props) => {
     const {product, addProduct } = props
-    window.localStorage.setItem('product',JSON.stringify(product));
+    //window.localStorage.setItem('product',JSON.stringify(product));
     return (
         <div className='product-detail-container'>
             <h1>{product && product.title}</h1>
@@ -22,6 +22,7 @@ const ProductDetail = (props) => {
                 </div>
                 <div className='box-2'>
                 { product && (
+
                     <ul>
                         -----------------------------------------------
                         <li>Descriopción: {product.description}</li>
@@ -44,10 +45,10 @@ const ProductDetail = (props) => {
 
 const mapStateToProps = (state, ownProps) => {
 
-    const id = ownProps.match.params.id;
+    const sku = ownProps.match.params.sku;
     const products = state.shelf.products
-    const product = products ? products[id - 1] : null
-  
+    const product = products ? products.find(product => product.sku == sku) : null
+    console.log(sku, product, products.length)
     return {
        product: product
     }
