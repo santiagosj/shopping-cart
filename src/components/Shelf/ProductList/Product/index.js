@@ -64,7 +64,7 @@ const Product = ({product, addProduct }) => {
     )
 
 }
-//define el tipo de propiedad del componente producto un objeto "product" y una funcion "addProdcut"
+
 Product.propTypes = {
     product: PropTypes.object.isRequired,
     addProduct:PropTypes.func.isRequired

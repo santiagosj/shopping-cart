@@ -26,12 +26,13 @@ class Checkbox extends Component{
     render(){
 
         const { label, classes } = this.props
-        const { isChecked } = this.state
-
+        const { isChecked } = this.state 
+       
         return(
-            <div className={classes}>
+            <div className={classes} >
                <label>
                    <input
+                     
                       type="checkbox"
                       value={label}
                       checked={isChecked}

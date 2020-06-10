@@ -26,13 +26,15 @@ class Filter extends Component{
           }else{
               this.selectedCheckboxes.add(label)
           }
+          
           this.props.updateFilters(Array.from(this.selectedCheckboxes))
-           console.log(this.selectedCheckboxes)
+
       }
 
     
-      createCheckbox = label => (
-          <Checkbox
+      createCheckbox = (label) => (
+          
+          <Checkbox 
              classes="filters-available-size"
              label={label}
              handleCheckboxChange = {this.toggleCheckbox}
@@ -44,10 +46,10 @@ class Filter extends Component{
       createCheckboxes = () => availableSizes.map(this.createCheckbox)
 
       render(){
-
+        
           return(
               <div className="filters">
-                  <h4 className="title">Sizes:</h4>
+                  <h4 className="title">Variedad:</h4>
                   
                   { this.createCheckboxes()}
 
@@ -55,12 +57,12 @@ class Filter extends Component{
                   ------------------- <br/>
                   <select>
                       <option>Select</option>
-                      <option>Tech</option>
-                      <option>Music</option>
-                      <option>Beer</option>
+                      <option>Cervezas</option>
+                      <option>Vinos</option>
+                      <option>Espumantes</option>
+                      <option>Whiskys</option>
                   </select>
               </div>
-              
           )
       }
 }

@@ -48,7 +48,7 @@ const mapStateToProps = (state, ownProps) => {
     const sku = ownProps.match.params.sku;
     const products = state.shelf.products
     const product = products ? products.find(product => product.sku == sku) : null
-    console.log(sku, product, products.length)
+    //console.log(sku, product, products.length)
     return {
        product: product
     }
